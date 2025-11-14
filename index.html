@@ -1,105 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated website</title>
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TW Coming Soon | Free Tailwindcss theme by Fyrestrap</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Montserrat': ['Montserrat'],
+            'Noto-Sans': ['"Noto Sans"'],
+            'Comforter-Brush': ['"Comforter Brush"']
+          }
+        }
+      }
+    }
+  </script>
+  
 </head>
-<body>
-    <div id="main">
-        <div id="home">
-            <div id="nav">
-            <div id="nleft">
-                <a class="nlink" href="#">Home</a>
-                <a class="nlink" href="#">Pricing</a>
-                <a class="nlink" href="#">Product</a>
-            </div>
-            <div id="nright">
-                <a class="nlink" href="#">Our Journey</a>
-            </div>
-            </div>
-            <div id="hero">
-                <div class="anim2" id="sustain">
-                    <h5>01.</h5>
-                    <h2>Sustainability.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo.</p>
-                    <div class="imgeff" id="susimagewrapper">
-                        <img src="./assets/pinkgreenplant.jpg" alt="">
-                    </div>
-                </div>
-                <div class="anim2" id="ephemeral">
-                    <div id="headings">
-                        <h1>Ephemeral</h1>
-                        <h1>Equilibrium.</h1>
-                    </div>
-                    <div id="imgtext">
-                        <img src="./assets/pinkplant.jpg" alt="">
-                        <p>Commited to sustainability and Eco-friendly choice for a better tommorrow.</p>
-                    </div>
-                </div>
-                <div class="anim2" id="visit">
-                    <div id="circlev">
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </div>
-                    <h3>visit our gallery.</h3>
-                </div>
-            </div> 
+
+<body class="font-Noto-Sans">
+
+  
+  <!-- Header -->
+  <header class="w-full bg-[url('assets/img/leaves.jpg')] bg-cover bg-bottom">  
+    <div class="w-full min-h-screen md:w-1/2 bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 flex">
+      <div class="w-full text-center my-auto">
+        <h1 class="font-bold text-5xl font-Comforter-Brush text-amber-500 mb-10 md:text-right">Tayobi Tiling.</h1>
+        <h6 class="font-Montserrat font-bold uppercase text-4xl md:text-5xl lg:text-6xl mb-14 md:-mr-20 text-white md:text-right">Coming <span class="text-white/70 md:-mr-20">soon</span></h6>
+
+        
+        <!-- Count down -->
+        <div class="w-full text-left flex mb-10">
+          <ul class="w-full flex place-content-center md:place-content-end gap-5 mx-auto text-gray-50">        
+            <li>
+              <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdD">00</div>
+              <p class="text-center text-xs mt-2">Days</p>
+            </li>
+
+            <li>
+              <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdH">00</div>
+              <p class="text-center text-xs mt-2">Hours</p>
+            </li>
+
+            <li>
+              <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdM">00</div>
+              <p class="text-center text-xs mt-2">Minutes</p>
+            </li>
+
+            <li>
+              <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdS">00</div>
+              <p class="text-center text-xs mt-2">Seconds</p>
+            </li>
+
+          </ul>
         </div>
-        <div id="motive">
-                <h3>Our motive</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae perspiciatis iusto placeat dolorem aliquam minus.<span id="onespan"></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut? <span id="twospan"></span>
-                    Lorem ipsum dolor sit amet consectetur <span id="threespan"></span>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div id="pictures">
-            <div id="firstpic">
-                <div class="imgeff" id="picimg">
-                    <img src="./assets/sea.jpg" alt="">
-                </div>
-                <h1>Synergy.</h1>
-                <p>Committed to sustainability, eco-friendly choices for a better tomorrow.</p>
-            </div>
-            <div id="secpic">
-                <div class="imgeff" id="picimg">
-                    <img src="./assets/cloud.jpg" alt="">
-                </div>
-                <h1>Harmony.</h1>
-                <p>Committed to sustainability, eco-friendly choices for a better tomorrow.</p>
-            </div>
-        </div>
-        <div id="banner">
-            <div id="bimg">
-                <img src="./assets/bottle.jpg" alt="">
-                <img src="./assets/bottle2.jpg" alt="">
-            </div>
-            <div id="btext">
-                <h1>Biodegradable</h1>
-                <h1>Packaging</h1>
-                <p>Committed to sustainability, eco-friendly choices for a better tomorrow.</p>
-            </div>
-        </div>
-        <div id="footer">
-            <video src="./assets/back.mp4" autoplay muted loop></video>
-            <div id="ftext">
-                <h1>Think of Future</h1>
-                <p>Tayo Bi Tiling — Premium tile supplier and professional tiling services in Christchurch, New Zealand.</p>
-                <p><strong>Call:</strong> <a href="tel:+64224558433">+64 224 558 433</a> &nbsp; | &nbsp; <strong>Email:</strong> <a href="mailto:tayobitiling@gmail.com">tayobitiling@gmail.com</a></p>
-                <p><strong>Location:</strong> Christchurch, New Zealand</p>
-                <button>Join the movement</button>
-            </div>
-        </div>
-    </div>
-    <!-- script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-    <script type="module" src="./script.js"></script>
+
+        <!-- Content -->
+        <p class="text-base mb-10 text-gray-200 md:text-right">ChatGPT said:
+
+Based in Christchurch, our tiling service provides expert installation of top-quality tiles for homes and businesses. Specializing in ceramic, porcelain, and natural stone, we ensure precision and durability with every project. Whether it’s a bathroom, kitchen, or floor, we deliver exceptional results that enhance any space. Contact us at tayobitiling@gmail.com
+ or call +64 224 558 433 for a quote.</p>
+
+        <!-- Social media -->
+       
+
+      </div>
+    </div>   
+  </header>  
+
+  <script>
+    // Change the value of countDownEndDate to the day you want to end the count down
+    var countDownEndDate = "November 22, 2025 09:00:00";
+    
+    var endDate = new Date(countDownEndDate).getTime();
+    
+    var x = setInterval(function() {
+    
+      var timeNow = new Date().getTime();
+    
+      var timeLeft = endDate - timeNow;
+    
+      var days    = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours   = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      if(days < 10) {
+        days = "0" + days;
+      }
+
+      if(hours < 10) {
+        hours = "0" + hours;
+      }
+
+      if(minutes < 10) {
+        minutes = "0" + minutes;
+      }
+
+      if(seconds < 10) {
+        seconds = "0" + seconds;
+      }
+    
+      if (timeLeft > 0) {
+        document.getElementById("cdD").innerHTML = days;
+        document.getElementById("cdH").innerHTML = hours;
+        document.getElementById("cdM").innerHTML = minutes;
+        document.getElementById("cdS").innerHTML = seconds;
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
